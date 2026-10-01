@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Name/Value Pairs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+    <h1>Test</h1>
+
+    <section class="row">
+        <div class="field">
+            <label for="pairInput">Name/Value Pair</label>
+            <input type="text" id="pairInput" placeholder="Name=Value" autocomplete="off">
+            <p class="message" id="message" role="alert"></p>
+        </div>
+        <div class="actions">
+            <button type="button" id="addBtn">Add</button>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="field">
+            <label for="pairList">Name/Value Pair List</label>
+            <select id="pairList" multiple size="12"></select>
+        </div>
+        <div class="actions">
+            <button type="button" id="sortByNameBtn">Sort by Name</button>
+            <button type="button" id="sortByValueBtn">Sort by Value</button>
+            <button type="button" id="deleteBtn" class="danger">Delete</button>
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
